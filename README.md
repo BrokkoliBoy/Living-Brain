@@ -18,24 +18,24 @@ teora platform itself runs on Java 17 / Spring Boot microservices, Keycloak, Pos
 
 ## My role
 
-I joined in January 2020 as an intern and, over the next five years, moved through several roles: Junior Unity Developer, Unity Developer, Senior Software Engineer, and Head of Development from April 2025. As the company's programming team never grew much past three people, my day-to-day work spanned nearly everything - across all of Living Brain's products, plus regulatory work and, eventually, leading the team (both covered below).
+I joined in January 2020 as an intern and, over the next five years, moved through several roles: Junior Unity Developer, Unity Developer, Senior Software Engineer, and Head of Development from April 2025. As the company's programming team never grew much past three people, my day-to-day work spanned nearly everything - across all of Living Brain's products, plus regulatory work and, eventually, leading the team (both covered below: [regulatory work](#regulatory-and-compliance-work), [leading the team](#leading-a-small-experienced-team)). Given the size of the team, part of my responsibility was not only implementing the code, but also making sure the result worked well from a user-experience point of view: picking sensible starting values for how things behave, then refining them with the artists and in playtests. The movement interactions in [teora body](#teora-body) (below) are a good example.
 
 ### teora mind
 **Longest involvement, roughly half the codebase.** Living Brain's flagship product, and the one I was involved with the longest - close to its start, and continuously through all six years. I estimate I personally implemented roughly half of its codebase, and was conceptually involved in nearly all of it, either as the one who designed a system or the one who reviewed and understood it afterward.
 
-Around 2021-2023, as my manager's attention shifted more toward regulatory work, I effectively became responsible for the codebase - making more of the technical decisions myself, including introducing (and later maintaining solo) the team's coding conventions. That responsibility was later formalized in the title Code Lead, awarded before Head of Development and distinct from it - Code Lead was specifically about owning the codebase, while Head of Development (see Leading a small, experienced team, below) was about the team and process more broadly. Taking on that kind of ownership changed how I saw the code itself, in much the same way leading the team later changed how I saw the product.
+Around 2021-2023, as my manager's attention shifted more toward regulatory work, I effectively became responsible for the codebase - making more of the technical decisions myself, including introducing (and later maintaining solo) the team's coding conventions. That responsibility was later formalized in the title Code Lead, awarded before Head of Development and distinct from it - Code Lead was specifically about owning the codebase, while Head of Development (see [Leading a small, experienced team](#leading-a-small-experienced-team), below) was about the team and process more broadly. Taking on that kind of ownership changed how I saw the code itself, in much the same way leading the team later changed how I saw the product.
 
 ### teora body
 **A six-to-eight-month fork, team of four.** A hand-tracking fork of teora mind for upper-extremity training, built over about six to eight months by a small team of two programmers and two artists. My role matched my usual one on teora mind - planning, implementation, and design decisions - plus a recurring extra task: making movement-based interactions actually feel good, like a rocket's flight or a navigation device with realistic weight and drag.
 
 ### teora platform
-**Limited involvement, mostly coordination.** My own hands-on involvement was limited: coordinating the protocol between it and teora mind early on, then in 2026, supervising a short focused effort with an external team to close out a paused batch of pending changes. The platform itself was built and is maintained primarily by others (see Tech stack).
+**Limited involvement, mostly coordination.** My own hands-on involvement was limited: coordinating the protocol between it and teora mind early on, then in 2026, supervising a short focused effort with an external team to close out a paused batch of pending changes. The platform itself was built and is maintained primarily by others (see [Tech stack](#tech-stack)).
 
 ### teora supervisor
-**Built the connection layer end to end.** The tablet app that lets a doctor or family member watch a patient's teora mind session live. I built its custom handshake protocol (see Technical Highlights) and the UI around it, implemented on both sides of the connection - Android Studio on the tablet, Unity on the headset. The initial setup and the streaming itself were built by others.
+**Built the connection layer end to end.** The tablet app that lets a doctor or family member watch a patient's teora mind session live. I built its custom handshake protocol (see [Technical highlights](#technical-highlights)) and the UI around it, implemented on both sides of the connection - Android Studio on the tablet, Unity on the headset. The initial setup and the streaming itself were built by others.
 
 ### teora device interface library
-**Entirely solo, start to finish.** An Android library connecting the VR headset to the cloud backend - entirely my own project, planned and built solo. It's also where the device-identity work described under Technical Highlights lives.
+**Entirely solo, start to finish.** An Android library connecting the VR headset to the cloud backend - entirely my own project, planned and built solo. It's also where the device-identity work described under [Technical highlights](#technical-highlights) lives.
 
 ### Regulatory and compliance work
 
