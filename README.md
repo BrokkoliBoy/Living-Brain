@@ -2,17 +2,17 @@
 
 **Company:** Living Brain GmbH | **Role:** Unity Developer -> Senior Software Engineer -> Head of Development | **Timeframe:** 2020-2026 | **Note:** proprietary/confidential codebase, not included; this is a writeup of the work, not the code itself
 
-I spent six years at Living Brain GmbH, a small medical VR company, and ended up as Head of Development. This writeup covers what I actually built and what changed about my work as the role grew.
+I joined Living Brain GmbH, a small medical VR company, in 2020 and spent six years there, progressing from a programmer role to Head of Development. This writeup covers what I actually built and what changed about my work as the role grew.
 
 ## What Living Brain builds
 
 Living Brain's main product, teora mind, is designed to help people with neurological conditions train memory, attention, and concentration. Instead of relying on abstract cognitive exercises, teora mind uses immersive virtual environments to recreate familiar real-world situations - shopping for groceries, cooking in a kitchen, pouring a cup of coffee - in a setting where a mistake costs nothing: no burns, no broken dishes, no real consequences, just another try.
 
-It is a VR-based cognitive training application used in therapeutic settings, both in-clinic during a supervised session and at home for aftercare, with a doctor able to follow a patient's progress either way, and is classified as a Class IIa medical device in Germany. Patients wear a VR headset and work through therapy exercises; an optional tablet companion app lets a therapist watch the session in real time and step in to guide the patient when needed. Three related products grew out of it: teora body (a hand-tracking variant for upper-extremity rehabilitation), teora platform (the clinician-facing web backend where training plans get managed and results reviewed), and teora supervisor (a tablet app that lets a doctor or family member watch a patient's session live).
+It is a VR-based cognitive training application used in therapeutic settings, both in-clinic during a supervised session and at home for aftercare, and is classified as a Class IIa medical device in Germany. Patients wear a VR headset and work through therapy exercises; an optional tablet companion app lets a therapist watch the session in real time and step in to guide the patient when needed. Three related products grew out of it: teora body (a hand-tracking variant for upper-extremity rehabilitation), teora platform (the clinician-facing web backend where patients' training plans get managed and results reviewed), and teora supervisor (a tablet app that lets a doctor or family member watch a patient's session live).
 
 ## Tech stack
 
-Unity / C# (teora mind, teora body); Android / Java (the device-interface library, teora supervisor); WebRTC / Unity Render Streaming (teora supervisor's live view); Plastic SCM, Jira, Confluence.
+Unity / C# (teora mind, teora body); Android / Java (the device-interface library, teora supervisor); WebRTC / Unity Render Streaming (teora supervisor's live view); Plastic SCM, GitHub, Jira, Confluence, Scrum.
 
 teora platform itself runs on Java 17 / Spring Boot microservices, Keycloak, PostgreSQL with Liquibase, and a React/TypeScript frontend. Listed here for completeness: I only worked with this stack superficially - it was built and is maintained primarily by others, with outside technical support brought in as needed.
 
@@ -23,7 +23,7 @@ I joined in January 2020 as an intern and, over the next five years, moved throu
 ### teora mind
 **Longest involvement, roughly half the codebase.** Living Brain's flagship product, and the one I was involved with the longest - close to its start, and continuously through all six years. I estimate I personally implemented roughly half of its codebase, and was conceptually involved in nearly all of it, either as the one who designed a system or the one who reviewed and understood it afterward.
 
-Around 2021-2023, as my manager's attention shifted more toward regulatory work, I effectively became responsible for the codebase - making more of the technical decisions myself, including introducing (and later maintaining solo) the team's coding conventions. Taking on that kind of ownership changed how I saw the code itself, in much the same way leading the team later changed how I saw the product.
+Around 2021-2023, as my manager's attention shifted more toward regulatory work, I effectively became responsible for the codebase - making more of the technical decisions myself, including introducing (and later maintaining solo) the team's coding conventions. That responsibility was later formalized in the title Code Lead, awarded before Head of Development and distinct from it - Code Lead was specifically about owning the codebase, while Head of Development (see Leading a small, experienced team, below) was about the team and process more broadly. Taking on that kind of ownership changed how I saw the code itself, in much the same way leading the team later changed how I saw the product.
 
 ### teora body
 **A six-to-eight-month fork, team of four.** A hand-tracking fork of teora mind for upper-extremity training, built over about six to eight months by a small team of two programmers and two artists. My role matched my usual one on teora mind - planning, implementation, and design decisions - plus a recurring extra task: making movement-based interactions actually feel good, like a rocket's flight or a navigation device with realistic weight and drag.
