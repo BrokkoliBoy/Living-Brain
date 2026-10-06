@@ -1,6 +1,6 @@
 # Living Brain: Professional Case Study
 
-**Company:** Living Brain GmbH | **Role:** Unity Developer -> Senior Software Engineer -> Head of Development | **Timeframe:** 2020-2026 | **Note:** proprietary/confidential codebase, not included; this is a writeup of the work, not the code itself
+**Company:** Living Brain GmbH | **Role:** Unity Developer -> Senior Software Engineer -> Head of Development | **Timeframe:** 2020-2026 | **Note:** proprietary/confidential codebase, not included. This is a writeup of the work, not the code itself
 
 I joined Living Brain GmbH, a small medical VR company, in 2020 and spent six years there, progressing from a programmer role to Head of Development. This writeup covers what I actually built and what changed about my work as the role grew.
 
@@ -12,7 +12,7 @@ It is a VR-based cognitive training application used in therapeutic settings, bo
 
 ## Tech stack
 
-Unity / C# (teora mind, teora body); Android / Java (the device-interface library, teora supervisor); WebRTC / Unity Render Streaming (teora supervisor's live view); Plastic SCM, GitHub, Jira, Confluence, Scrum.
+Unity / C# (teora mind, teora body). Android / Java (the device-interface library, teora supervisor). WebRTC / Unity Render Streaming (teora supervisor's live view). Plastic SCM, GitHub, Jira, Confluence, Scrum.
 
 teora platform itself runs on Java 17 / Spring Boot microservices, Keycloak, PostgreSQL with Liquibase, and a React/TypeScript frontend. Listed here for completeness: I only worked with this stack superficially - it was built and maintained primarily by others, with outside technical support brought in as needed (my own involvement is described under [teora platform](#teora-platform)).
 
@@ -41,13 +41,15 @@ Around 2022-2024, as my manager's attention shifted more toward regulatory work,
 
 ### Regulatory and compliance work
 
-**Maintained an existing system, not designed from scratch.** teora mind's status as a medical device meant maintaining a quality management system (QMS) and technical documentation (TD). Neither of these was something I built; both existed before my involvement, and my role was maintaining and extending them, not designing them from scratch.
+**Maintained an existing system, not designed from scratch.** teora mind's status as a medical device meant maintaining a quality management system (QMS) and technical documentation (TD). When I became Head of Development, this work became part of my role. Neither the QMS nor the TD was something I built. Both existed before my involvement. I maintained and extended them instead of designing them from scratch.
 
-The QMS also affected the app itself. Many requirements, such as one-handed operation and clearly recognizable controls, trace back to it. Most of the regulatory work, however, was separate from the project itself. I took on a larger share of it once I became Head of Development, helping turn it into a properly shared team effort. I've since handed off day-to-day QMS ownership and kept the TD myself. My name was on it, so I had to understand all of it. As part of the TD, I ran recurring cybersecurity screenings against public vulnerability databases and wrote impact assessments for individual CVEs. Two examples are a widely reported React vulnerability and a PostgreSQL CVE, where I ruled out that we were exposed. I documented the verification steps, not just the conclusion.
+Later I handed off day-to-day QMS ownership to a coworker. I kept the TD, since it covers the development side of the product. My work on the TD was regular maintenance for the most part. In practice, I brought it up to date with the changes in the app for each new release. This included things like revising the specifications of changed features, documenting every change with an assessment of its risk impact, and updating the tests. Also, as Head of Development, I signed off the complete TD and with it the release.
+
+Another important part of my responsibility was the cybersecurity of all our apps. I ran recurring screenings against public vulnerability databases, and I read security news regularly to spot major vulnerabilities early. For example, when React2Shell was reported, I wrote a dedicated assessment of whether we were affected and added it to the TD. The assessment ruled out any exposure and documented the verification steps, not just the conclusion.
 
 ## Leading a small, experienced team
 
-After the previous Head of Development left the company, I took over the role in 2025 as the most suitable successor. This changed less about day-to-day technical decisions than it changed about process and responsibility. I had already been the one setting architectural direction informally for years; what was new was owning the outcome, including on the strategic side: not just how something got built, but whether it should get built at all. I wrote design documents ahead of implementation for anything non-trivial (problem, options, risks, a rough plan), a habit that consistently surfaced inconsistencies the team hadn't caught in conversation alone.
+After the previous Head of Development left the company, I took over the role in 2025 as the most suitable successor. This changed less about day-to-day technical decisions than it changed about process and responsibility. I had already been the one setting architectural direction informally for years. What was new was owning the outcome, including on the strategic side: not just how something got built, but whether it should get built at all. I wrote design documents ahead of implementation for anything non-trivial (problem, options, risks, a rough plan), a habit that consistently surfaced inconsistencies the team hadn't caught in conversation alone.
 
 A recurring part of that shift was prioritizing based on direct, concrete feedback over what was already underway or seemed technically interesting on its own - including being willing to pause work in progress once a clearer priority surfaced.
 
