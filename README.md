@@ -1,3 +1,6 @@
+
+
+
 # Living Brain: Professional Case Study
 
 **Company:** Living Brain GmbH | **Role:** Unity Developer -> Senior Software Engineer -> Head of Development | **Timeframe:** 2020-2026 | **Note:** proprietary/confidential codebase, not included. This is a writeup of the work, not the code itself
@@ -28,6 +31,9 @@ Content-wise, I was involved in all four of Living Brain's products and did the 
 Around 2022-2024, as my manager's attention shifted more toward regulatory work, I proactively took on more responsibility for the codebase. This meant making more of the technical decisions myself, extending the team's existing coding conventions, and starting to plan further ahead. That responsibility was later formalized in the title Code Lead, awarded before Head of Development and distinct from it - Code Lead was specifically about owning the codebase, while Head of Development (see [Leading a small, experienced team](#leading-a-small-experienced-team), below) was about the team and process more broadly. Taking on that kind of ownership changed how I see the code, in much the same way leading the team later changed how I see the product.
 
 ### teora body
+
+https://github.com/user-attachments/assets/7e732cf9-cb03-444f-af30-a0ac1574ced4
+
 **A hand-tracking fork of teora mind.** It applies the same VR training approach to the rehabilitation of the upper extremity joints, such as shoulders and elbows. We saw a market for it, so we did it in between work on teora mind. My role was the same as on teora mind: planning, implementation, and design decisions. On top of that, our Head of Development was already preparing to leave the company and was largely not involved. So this was the first project where we made most of the decisions ourselves.
 
 ### teora platform
