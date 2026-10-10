@@ -9,6 +9,8 @@ I joined Living Brain GmbH, a small medical VR company, in 2020 and spent six ye
 
 ## What Living Brain builds
 
+https://github.com/user-attachments/assets/175d2977-611f-4e7c-892f-c5bb15140f57
+
 Living Brain's main product, teora mind, is designed to help people with neurological conditions train memory, attention, and concentration. Instead of relying on abstract cognitive exercises, teora mind uses immersive virtual environments to recreate familiar real-world situations - shopping for groceries, cooking in a kitchen, pouring a cup of coffee - in a setting where a mistake costs nothing: no burns, no broken dishes, no real consequences, just another try.
 
 It is a VR-based cognitive training application used in therapeutic settings, both in-clinic during a supervised session and at home for aftercare, and is classified as a Class IIa medical device in Germany. Patients wear a VR headset and work through therapy exercises, while an optional tablet companion app lets a therapist watch the session in real time and step in to guide the patient when needed. Three related products grew out of it: teora body (a hand-tracking variant for upper-extremity rehabilitation), teora platform (the clinician-facing web backend where patients' training plans get managed and results reviewed), and teora supervisor (a tablet app that lets a doctor or family member watch a patient's session live).
@@ -31,8 +33,6 @@ Content-wise, I was involved in all four of Living Brain's products and did the 
 Around 2022-2024, as my manager's attention shifted more toward regulatory work, I proactively took on more responsibility for the codebase. This meant making more of the technical decisions myself, extending the team's existing coding conventions, and starting to plan further ahead. That responsibility was later formalized in the title Code Lead, awarded before Head of Development and distinct from it - Code Lead was specifically about owning the codebase, while Head of Development (see [Leading a small, experienced team](#leading-a-small-experienced-team), below) was about the team and process more broadly. Taking on that kind of ownership changed how I see the code, in much the same way leading the team later changed how I see the product.
 
 ### teora body
-
-https://github.com/user-attachments/assets/7e732cf9-cb03-444f-af30-a0ac1574ced4
 
 **A hand-tracking fork of teora mind.** It applies the same VR training approach to the rehabilitation of the upper extremity joints, such as shoulders and elbows. We saw a market for it, so we did it in between work on teora mind. My role was the same as on teora mind: planning, implementation, and design decisions. On top of that, our Head of Development was already preparing to leave the company and was largely not involved. So this was the first project where we made most of the decisions ourselves.
 
