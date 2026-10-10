@@ -36,6 +36,8 @@ Around 2022-2024, as my manager's attention shifted more toward regulatory work,
 
 **A hand-tracking fork of teora mind.** It applies the same VR training approach to the rehabilitation of the upper extremity joints, such as shoulders and elbows. We saw a market for it, so we did it in between work on teora mind. My role was the same as on teora mind: planning, implementation, and design decisions. On top of that, our Head of Development was already preparing to leave the company and was largely not involved. So this was the first project where we made most of the decisions ourselves.
 
+<!-- VIDEO STILL TO ADD (teora body): 30-45 s hand-tracking clip with the shoulder and elbow movements, cut from the overview video or from single exercises. Alternative: short GIF loops committed to the repo. -->
+
 ### teora platform
 **Limited involvement, mostly coordination.** The platform was built and maintained primarily by others (see [Tech stack](#tech-stack)). I was involved in two ways. First, I prepared the data in Unity and sent it to the platform via REST calls. Second, in 2026 customer feedback led to new changes for the platform, and I supervised a short, focused effort with an external team to implement them.
 
@@ -67,6 +69,8 @@ The five pieces below aren't necessarily my single biggest or most impressive pi
 
 ### A handshake protocol for a secure, patient-protecting connection
 teora supervisor lets a doctor watch a patient's VR session live on a tablet, so the pairing protocol connecting tablet and headset had to handle the connection reliably without either side needing technical know-how to recover it. The doctor picks a headset from a list on the tablet. The patient then accepts the request in the headset after checking a code the doctor tells them. The protocol handles the rest. It includes a heartbeat timeout to catch a dropped WiFi connection and a same-device filter to prevent cross-talk between headsets, and had to be implemented twice, independently, in Java on the tablet and C#/Unity on the headset, with the exact same message format kept in sync by hand across both. Being trusted with the one piece of the system that directly touches a live patient session is the kind of responsibility that stuck with me.
+
+<!-- VIDEO STILL TO ADD (handshake): short clip of the pairing flow, cut from the public teora help center overview video. It shows the doctor picking a headset on the tablet and the patient accepting the request in the headset. Check the footage for patient, clinic and customer data before uploading. -->
 
 ### Making a device's identity un-copyable
 Each VR headset's identity was stored in a local file that could simply be copied onto another headset to fake its training history. I fixed this by binding that file to a hardware-backed key from Android's Keystore, written into the file once at setup - checking authenticity from then on is a purely local, on-device comparison against that key, no server round-trip needed. A small example of closing a real security gap, not just a theoretical one.
