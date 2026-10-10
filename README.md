@@ -37,11 +37,11 @@ Around 2022-2024, as my manager's attention shifted more toward regulatory work,
 
 ### teora body
 
-**A hand-tracking fork of teora mind.** It applies the same VR training approach to the rehabilitation of the upper extremity joints, such as shoulders and elbows. We saw a market for it, so we did it in between work on teora mind. My role was the same as on teora mind: planning, implementation, and design decisions. On top of that, our Head of Development was already preparing to leave the company and was largely not involved. So this was the first project where we made most of the decisions ourselves.
-
 https://github.com/user-attachments/assets/2a565fdb-b4a8-45a2-b9e2-29eb489145df
 
 <!-- Content of the video above, as described by me (not watched by the assistant): at the start a short wiggle of the fingers to show that hand tracking is on. Then Guided Rocket (about 14 s), the Pumping game (about 8 s), and the Catching game (about 12 s). The Destroying game is not included. -->
+
+**A hand-tracking fork of teora mind.** It applies the same VR training approach to the rehabilitation of the upper extremity joints, such as shoulders and elbows. We saw a market for it, so we did it in between work on teora mind. My role was the same as on teora mind: planning, implementation, and design decisions. On top of that, our Head of Development was already preparing to leave the company and was largely not involved. So this was the first project where we made most of the decisions ourselves.
 
 ### teora platform
 **Limited involvement, mostly coordination.** The platform was built and maintained primarily by others (see [Tech stack](#tech-stack)). I was involved in two ways. First, I prepared the data in Unity and sent it to the platform via REST calls. Second, in 2026 customer feedback led to new changes for the platform, and I supervised a short, focused effort with an external team to implement them.
