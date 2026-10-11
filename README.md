@@ -15,6 +15,8 @@ living brain's main product, teora mind, is designed to help people with neurolo
 
 It is a VR-based cognitive training application used in therapeutic settings, both in-clinic during a supervised session and at home for aftercare, and is classified as a Class IIa medical device in Germany. Patients wear a VR headset and work through therapy exercises, while an optional tablet companion app lets a therapist watch the session in real time and step in to guide the patient when needed. Three related products grew out of it: teora body (a hand-tracking variant for upper-extremity rehabilitation), teora platform (the clinician-facing web backend where patients' training plans get managed and results reviewed), and teora supervisor (a tablet app that lets a doctor or family member watch a patient's session live).
 
+In 2026, living brain's assets, including the teora products, were acquired by a new owner in an asset deal.
+
 ## Tech stack
 
 Unity / C# (teora mind, teora body). Android / Java (the device-interface library, teora supervisor). WebRTC / Unity Render Streaming (teora supervisor's live view). Plastic SCM, GitHub, Jira, Confluence, Scrum.
@@ -26,6 +28,19 @@ teora platform itself runs on Java 17 / Spring Boot microservices, Keycloak, Pos
 I joined the team in January 2020 as an intern. Over the following years I moved through several roles: Junior Unity Developer, Unity Developer, Senior Software Engineer, and Head of Development from April 2025. The longer I was there, the more my responsibility naturally grew: I began making design decisions myself, then took ownership of the codebase, and later took on responsibility for the team.
 
 Content-wise, I was involved in all four of living brain's products and did the usual programming work: implementing features, designing systems, and fixing bugs. Because the team was small, I also regularly took on side tasks outside my main domain that still had to be done, such as regulatory work, customer support, and device management for the VR headsets and tablets. The sections below cover [each product](#teora-mind), the [regulatory work](#regulatory-and-compliance-work), and [leading the team](#leading-a-small-experienced-team).
+
+The areas I worked in:
+
+- **VR application development** in Unity / C#: planning, design, and implementation of features and training scenarios
+- **Interaction and audio systems**: grabbing, hand tracking, collision and interactable sounds
+- **Localization**, including right-to-left support for Arabic
+- **Android / Java development**: a device interface library and the teora supervisor app
+- **Networking**: a custom pairing protocol between tablet and headset
+- **Security**: device identity protection and vulnerability assessments
+- **Internal tools**: editor tools and build checks
+- **Regulatory work**: technical documentation, risk assessments, and release sign-off
+- **Customer support and device management**
+- **Leading the team**: design documents, planning, and priorities
 
 ### teora mind
 
