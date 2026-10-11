@@ -1,15 +1,15 @@
 
 
 
-# Living Brain: Professional Case Study
+# living brain: Professional Case Study
 
-**Company:** Living Brain GmbH | **Role:** Unity Developer -> Senior Software Engineer -> Head of Development | **Timeframe:** 2020-2026 | **Note:** proprietary/confidential codebase, not included. This is a writeup of the work, not the code itself
+**Company:** living brain GmbH | **Role:** Unity Developer -> Senior Software Engineer -> Head of Development | **Timeframe:** 2020-2026 | **Note:** proprietary/confidential codebase, not included. This is a writeup of the work, not the code itself
 
-I joined Living Brain GmbH, a small medical VR company, in 2020 and spent six years there, progressing from a programmer role to Head of Development. This writeup covers what I actually built and what changed about my work as the role grew.
+I joined living brain GmbH, a small medical VR company, in 2020 and spent six years there, progressing from a programmer role to Head of Development. This writeup covers what I actually built and what changed about my work as the role grew.
 
-## What Living Brain builds
+## What living brain builds
 
-Living Brain's main product, teora mind, is designed to help people with neurological conditions train memory, attention, and concentration. Instead of relying on abstract cognitive exercises, teora mind uses immersive virtual environments to recreate familiar real-world situations - shopping for groceries, cooking in a kitchen, pouring a cup of coffee - in a setting where a mistake costs nothing: no burns, no broken dishes, no real consequences, just another try.
+living brain's main product, teora mind, is designed to help people with neurological conditions get back to everyday life, using tasks that train things like memory, attention, and concentration. Instead of relying on abstract cognitive exercises, teora mind uses immersive virtual environments to recreate familiar real-world situations - serving ice cream at a beach shop, cooking in a kitchen, pouring a cup of coffee - in a setting where a mistake costs nothing: no burns, no broken dishes, no real consequences, just another try.
 
 It is a VR-based cognitive training application used in therapeutic settings, both in-clinic during a supervised session and at home for aftercare, and is classified as a Class IIa medical device in Germany. Patients wear a VR headset and work through therapy exercises, while an optional tablet companion app lets a therapist watch the session in real time and step in to guide the patient when needed. Three related products grew out of it: teora body (a hand-tracking variant for upper-extremity rehabilitation), teora platform (the clinician-facing web backend where patients' training plans get managed and results reviewed), and teora supervisor (a tablet app that lets a doctor or family member watch a patient's session live).
 
@@ -21,9 +21,9 @@ teora platform itself runs on Java 17 / Spring Boot microservices, Keycloak, Pos
 
 ## My role
 
-I joined the team in January 2020 as an intern. Over the next six years I moved through several roles: Junior Unity Developer, Unity Developer, Senior Software Engineer, and Head of Development from April 2025. My responsibilities grew with each step. I started as a regular programmer, the first one hired next to my boss. The longer I was there, the more my responsibility naturally grew: I began making design decisions myself, then took ownership of the codebase, and later took on responsibility for the team.
+I joined the team in January 2020 as an intern. Over the next six years I moved through several roles: Junior Unity Developer, Unity Developer, Senior Software Engineer, and Head of Development from April 2025. The longer I was there, the more my responsibility naturally grew: I began making design decisions myself, then took ownership of the codebase, and later took on responsibility for the team.
 
-Content-wise, I was involved in all four of Living Brain's products and did the usual programming work: implementing features, designing systems, and fixing bugs. Because the team was small, I also regularly took on side tasks outside my main domain that still had to be done, such as regulatory work, support, and device management for the VR headsets and tablets. The sections below cover [each product](#teora-mind), the [regulatory work](#regulatory-and-compliance-work), and [leading the team](#leading-a-small-experienced-team).
+Content-wise, I was involved in all four of living brain's products and did the usual programming work: implementing features, designing systems, and fixing bugs. Because the team was small, I also regularly took on side tasks outside my main domain that still had to be done, such as regulatory work, customer support, and device management for the VR headsets and tablets. The sections below cover [each product](#teora-mind), the [regulatory work](#regulatory-and-compliance-work), and [leading the team](#leading-a-small-experienced-team).
 
 ### teora mind
 
@@ -31,7 +31,7 @@ https://github.com/user-attachments/assets/175d2977-611f-4e7c-892f-c5bb15140f57
 
 <!-- Content of the video above, as described by me (not watched by the assistant): it starts by entering the tutorial, followed by a short montage of things done in the tutorial (about 8 s). Then the garden scenario (about 10 s), including the giving of feedback. Then a montage of the beach scenario, similar but without the feedback part. Last, a montage of the FruitBowl scenario. Each segment is roughly 6-12 s. -->
 
-***Longest involvement, roughly half the codebase.*** Living Brain's flagship product, and the one I was involved with the longest - close to its start, and continuously through all six years. I estimate I personally implemented roughly half of its codebase, and was conceptually involved in nearly all of it, either as the one who designed a system or the one who reviewed and understood it afterward.
+***Longest involvement, roughly half the codebase.*** living brain's flagship product, and the one I was involved with the longest - close to its start, and continuously through all six years. I estimate I personally implemented roughly half of its codebase, and was conceptually involved in nearly all of it, either as the one who designed a system or the one who reviewed and understood it afterward.
 
 Around 2022-2024, as my manager's attention shifted more toward regulatory work, I proactively took on more responsibility for the codebase. This meant making more of the technical decisions myself, extending the team's existing coding conventions, and starting to plan further ahead. That responsibility was later formalized in the title Code Lead, awarded before Head of Development and distinct from it - Code Lead was specifically about owning the codebase, while Head of Development (see [Leading a small, experienced team](#leading-a-small-experienced-team), below) was about the team and process more broadly. Taking on that kind of ownership changed how I see the code, in much the same way leading the team later changed how I see the product.
 
@@ -76,7 +76,7 @@ The five pieces below aren't necessarily my single biggest or most impressive pi
 
 https://github.com/user-attachments/assets/7c84c6c5-f422-46da-86d6-c886766e17e3
 
-<!-- Content of the video above, as described by me (not watched by the assistant): borrowed from a Living Brain tutorial video, no audio. On the tablet app, the doctor opens the app and taps the search for devices. The list of found VR headsets shows one entry. A circle with an inset shows a photo of a real headset with its name (kiwi, parrot, pink) to match the symbols on the device. The hand taps the headset, and the tablet says it is waiting for the headset. The view then switches to the headset, zooming in until each eye sees the virtual tablet. In VR, a request asks whether the transmission should be started, and a virtual hand taps yes. Then the view zooms out through the headset again. Headset on the left, tablet on the right, both show the same picture, with text saying the image is being transmitted. Then the video ends. -->
+<!-- Content of the video above, as described by me (not watched by the assistant): borrowed from a living brain tutorial video, no audio. On the tablet app, the doctor opens the app and taps the search for devices. The list of found VR headsets shows one entry. A circle with an inset shows a photo of a real headset with its name (kiwi, parrot, pink) to match the symbols on the device. The hand taps the headset, and the tablet says it is waiting for the headset. The view then switches to the headset, zooming in until each eye sees the virtual tablet. In VR, a request asks whether the transmission should be started, and a virtual hand taps yes. Then the view zooms out through the headset again. Headset on the left, tablet on the right, both show the same picture, with text saying the image is being transmitted. Then the video ends. -->
 
 teora supervisor lets a doctor watch a patient's VR session live on a tablet, so the pairing protocol connecting tablet and headset had to handle the connection reliably without either side needing technical know-how to recover it. The doctor picks a headset from a list on the tablet. The patient then accepts the request in the headset after checking a code the doctor tells them. The protocol handles the rest. It includes a heartbeat timeout to catch a dropped WiFi connection and a same-device filter to prevent cross-talk between headsets, and had to be implemented twice, independently, in Java on the tablet and C#/Unity on the headset, with the exact same message format kept in sync by hand across both. Being trusted with the one piece of the system that directly touches a live patient session is the kind of responsibility that stuck with me.
 
@@ -94,4 +94,4 @@ Adding Arabic support meant swapping every TextMeshPro component in the project 
 
 ---
 
-See the rest of my portfolio for personal projects built outside of Living Brain.
+See the rest of my portfolio for personal projects built outside of living brain.
