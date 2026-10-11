@@ -3,13 +3,15 @@
 
 # living brain: Professional Case Study
 
-**Company:** living brain GmbH | **Role:** Unity Developer -> Senior Software Engineer -> Head of Development | **Timeframe:** 2020-2026 | **Note:** proprietary/confidential codebase, not included. This is a writeup of the work, not the code itself
+**Company:** living brain GmbH | **Role:** Unity Developer -> Senior Software Engineer -> Head of Development | **Timeframe:** January 2020 to August 2026
 
-I joined living brain GmbH, a small medical VR company, in 2020 and spent six years there, progressing from a programmer role to Head of Development. This writeup covers what I actually built and what changed about my work as the role grew.
+**Note:** This is a personal writeup of my own work. The codebase is proprietary and not included, and neither are internal documents or any patient or customer data. Product names and trademarks belong to their respective owners.
+
+I joined living brain GmbH, a small medical VR company, in 2020 and spent more than six years there, progressing from a programmer role to Head of Development. This writeup covers what I actually built and what changed about my work as the role grew.
 
 ## What living brain builds
 
-living brain's main product, teora mind, is designed to help people with neurological conditions get back to everyday life, using tasks that train things like memory, attention, and concentration. Instead of relying on abstract cognitive exercises, teora mind uses immersive virtual environments to recreate familiar real-world situations - serving ice cream at a beach shop, cooking in a kitchen, pouring a cup of coffee - in a setting where a mistake costs nothing: no burns, no broken dishes, no real consequences, just another try.
+living brain's main product, teora mind, is designed to help people with neurological conditions get back to everyday life, using tasks that train things like memory, attention, and concentration. Instead of relying on abstract cognitive exercises, teora mind uses immersive virtual environments to recreate familiar real-world situations - serving ice cream at a beach shop, making coffee in a kitchen, preparing a fruit bowl - in a setting where a mistake costs nothing: no burns, no broken dishes, no real consequences, just another try.
 
 It is a VR-based cognitive training application used in therapeutic settings, both in-clinic during a supervised session and at home for aftercare, and is classified as a Class IIa medical device in Germany. Patients wear a VR headset and work through therapy exercises, while an optional tablet companion app lets a therapist watch the session in real time and step in to guide the patient when needed. Three related products grew out of it: teora body (a hand-tracking variant for upper-extremity rehabilitation), teora platform (the clinician-facing web backend where patients' training plans get managed and results reviewed), and teora supervisor (a tablet app that lets a doctor or family member watch a patient's session live).
 
@@ -21,7 +23,7 @@ teora platform itself runs on Java 17 / Spring Boot microservices, Keycloak, Pos
 
 ## My role
 
-I joined the team in January 2020 as an intern. Over the next six years I moved through several roles: Junior Unity Developer, Unity Developer, Senior Software Engineer, and Head of Development from April 2025. The longer I was there, the more my responsibility naturally grew: I began making design decisions myself, then took ownership of the codebase, and later took on responsibility for the team.
+I joined the team in January 2020 as an intern. Over the following years I moved through several roles: Junior Unity Developer, Unity Developer, Senior Software Engineer, and Head of Development from April 2025. The longer I was there, the more my responsibility naturally grew: I began making design decisions myself, then took ownership of the codebase, and later took on responsibility for the team.
 
 Content-wise, I was involved in all four of living brain's products and did the usual programming work: implementing features, designing systems, and fixing bugs. Because the team was small, I also regularly took on side tasks outside my main domain that still had to be done, such as regulatory work, customer support, and device management for the VR headsets and tablets. The sections below cover [each product](#teora-mind), the [regulatory work](#regulatory-and-compliance-work), and [leading the team](#leading-a-small-experienced-team).
 
@@ -31,7 +33,7 @@ https://github.com/user-attachments/assets/175d2977-611f-4e7c-892f-c5bb15140f57
 
 <!-- Content of the video above, as described by me (not watched by the assistant): it starts by entering the tutorial, followed by a short montage of things done in the tutorial (about 8 s). Then the garden scenario (about 10 s), including the giving of feedback. Then a montage of the beach scenario, similar but without the feedback part. Last, a montage of the FruitBowl scenario. Each segment is roughly 6-12 s. -->
 
-***Longest involvement, roughly half the codebase.*** living brain's flagship product, and the one I was involved with the longest - close to its start, and continuously through all six years. I estimate I personally implemented roughly half of its codebase, and was conceptually involved in nearly all of it, either as the one who designed a system or the one who reviewed and understood it afterward.
+***Longest involvement, roughly half the codebase.*** living brain's flagship product, and the one I was involved with the longest - close to its start, and continuously through all of my time there. I estimate I personally implemented roughly half of its codebase, and was conceptually involved in nearly all of it, either as the one who designed a system or the one who reviewed and understood it afterward.
 
 Around 2022-2024, as my manager's attention shifted more toward regulatory work, I proactively took on more responsibility for the codebase. This meant making more of the technical decisions myself, extending the team's existing coding conventions, and starting to plan further ahead. That responsibility was later formalized in the title Code Lead, awarded before Head of Development and distinct from it - Code Lead was specifically about owning the codebase, while Head of Development (see [Leading a small, experienced team](#leading-a-small-experienced-team), below) was about the team and process more broadly. Taking on that kind of ownership changed how I see the code, in much the same way leading the team later changed how I see the product.
 
