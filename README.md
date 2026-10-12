@@ -113,4 +113,4 @@ Adding Arabic support meant swapping every TextMeshPro component in the project 
 
 ---
 
-See the rest of my portfolio for personal projects built outside of living brain.
+See [the rest of my portfolio](https://github.com/BrokkoliBoy) for personal projects built outside of living brain.
