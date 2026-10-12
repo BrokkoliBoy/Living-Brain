@@ -19,7 +19,7 @@ In 2026, living brain's assets, including the teora products, were acquired by a
 
 ## Tech stack
 
-Unity / C# (teora mind, teora body). Android / Java (the device-interface library, teora supervisor). WebRTC / Unity Render Streaming (teora supervisor's live view). Plastic SCM, GitHub, Jira, Confluence, Scrum.
+Unity / C# (teora mind, teora body). Android / Java (the backend connection layer, teora supervisor). WebRTC / Unity Render Streaming (teora supervisor's live view). Plastic SCM, GitHub, Jira, Confluence, Scrum.
 
 teora platform itself runs on Java 17 / Spring Boot microservices, Keycloak, PostgreSQL with Liquibase, and a React/TypeScript frontend. Listed here for completeness: I only worked with this stack superficially - it was built and maintained primarily by others, with outside technical support brought in as needed (my own involvement is described under [teora platform](#teora-platform)).
 
@@ -31,16 +31,16 @@ Content-wise, I was involved in all four of living brain's products and did the 
 
 The areas I worked in:
 
-- **VR application development** in Unity / C#: planning, design, and implementation of features and training scenarios
-- **Interaction and audio systems**: grabbing, hand tracking, collision and interactable sounds
-- **Localization**, including right-to-left support for Arabic
-- **Android / Java development**: a device interface library and the teora supervisor app
-- **Networking**: a custom pairing protocol between tablet and headset
-- **Security**: device identity protection and vulnerability assessments
-- **Internal tools**: editor tools and build checks
-- **Regulatory work**: technical documentation, risk assessments, and release sign-off
-- **Customer support and device management**
-- **Leading the team**: design documents, planning, and priorities
+- **Software development** in Unity / C#: planning, designing, implementing features and systems
+- **Android / Java development**: the backend connection layer that connects teora mind to the platform, including local data storage, and the teora supervisor app
+- **VR-specific development**: grabbing, snap zones, hand tracking (using VRTK)
+- **Software architecture**: scene architecture, configurable product variants and modes, coordinating technical decisions
+- **Game mechanics**: task and order systems, adaptive difficulty, physics-based object behavior
+- **UX**: designing and implementing user-friendly interactions
+- **Networking**: a custom pairing protocol between tablet and headset, and REST communication with the platform
+- **Developer tooling**: custom editor tools and automation that save the team manual work
+- **Regulatory work**: quality management system (QMS) procedures, technical documentation, cybersecurity assessments, release sign-off
+- **Leading the team**: design documents, planning, setting priorities, coordinating an external team
 
 ### teora mind
 
@@ -66,8 +66,8 @@ https://github.com/user-attachments/assets/2a565fdb-b4a8-45a2-b9e2-29eb489145df
 ### teora supervisor
 ***Built the connection layer end to end.*** The tablet app that lets a doctor or family member watch a patient's teora mind session live. I built its custom handshake protocol (see [Technical highlights](#technical-highlights)) and the UI around it, implemented on both sides of the connection - Android Studio on the tablet, Unity on the headset. The initial setup and the streaming itself were built by others.
 
-### teora device interface library
-***Entirely solo, start to finish.*** The training itself runs in Unity, but a VR headset in the field needs more than that. It has to log in to the platform, download the training plans that clinicians assign, and upload the results afterwards, even when the connection is unreliable. It also has to enforce time-limited licenses and protect the patient data on the device against tampering. None of this belongs in the game code, so I built it as a separate Android library that connects teora mind to the platform. The device-identity work described under [Technical highlights](#technical-highlights) is part of this library.
+### teora backend connection layer
+***Entirely solo, start to finish.*** The training itself runs in Unity, but a VR headset in the field needs more than that. It has to log in to the platform, download the training plans that clinicians assign, and upload the results afterwards, even when the connection is unreliable. It also has to enforce time-limited licenses and protect the patient data on the device against tampering. None of this belongs in the game code, so I built it as a separate Android layer that connects teora mind to the platform. The device-identity work described under [Technical highlights](#technical-highlights) is part of this library.
 
 ### Regulatory and compliance work
 
