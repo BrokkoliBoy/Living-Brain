@@ -7,7 +7,7 @@
 
 **Note:** This is a personal writeup of my own work. The codebase is proprietary and not included, and neither are internal documents or any patient or customer data. Product names and trademarks belong to their respective owners.
 
-I joined living brain GmbH, a small medical VR company, in 2020 and spent more than six years there, progressing from a programmer role to Head of Development. This writeup covers what I actually built and what changed about my work as the role grew.
+I joined living brain GmbH, a small medical VR company, in January 2020 and spent six years and eight months there, progressing from a programmer role to Head of Development. This writeup covers what I actually built and what changed about my work as the role grew.
 
 ## What living brain builds
 
