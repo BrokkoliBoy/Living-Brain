@@ -7,11 +7,11 @@
 
 **Note:** This is a personal writeup of my own work. The codebase is proprietary and not included, and neither are internal documents or any patient or customer data. Product names and trademarks belong to their respective owners.
 
-I joined living brain GmbH, a small medical VR company, in January 2020 and spent six years and eight months there, progressing from a programmer role to Head of Development. This writeup covers what I actually built and what changed about my work as the role grew.
+I started at living brain GmbH, a small medical VR company, in January 2020 and stayed for six years and eight months, growing from a programmer role into Head of Development. This writeup covers what I actually built and what changed about my work as the role grew.
 
 ## What living brain builds
 
-living brain's main product, teora mind, is designed to help people with neurological conditions get back to everyday life, using tasks that train things like memory, attention, and concentration. Instead of relying on abstract cognitive exercises, teora mind uses immersive virtual environments to recreate familiar real-world situations, such as serving ice cream at a beach shop, making coffee in a kitchen, or preparing a fruit bowl. The setting is one where a mistake costs nothing: no burns, no broken dishes, no real consequences, just another try.
+living brain's main product, teora mind, is designed to help people with neurological conditions get back to everyday life, using tasks that train things like memory, attention, and concentration. Instead of abstract cognitive exercises, patients practice everyday tasks in virtual surroundings, such as serving ice cream at a beach shop, making coffee in a kitchen, or preparing a fruit bowl. The setting is one where a mistake costs nothing: no burns, no broken dishes, no real consequences, just another try.
 
 It is a VR-based cognitive training application used in therapeutic settings, both in-clinic during a supervised session and at home for aftercare, and is classified as a Class IIa medical device in Germany. Patients wear a VR headset and work through therapy exercises, while an optional tablet companion app lets a therapist watch the session in real time and step in to guide the patient when needed. Three related products grew out of it: teora body (a hand-tracking variant for upper-extremity rehabilitation), teora platform (the clinician-facing web backend where patients' training plans get managed and results reviewed), and teora supervisor (a tablet app that lets a doctor or family member watch a patient's session live).
 
